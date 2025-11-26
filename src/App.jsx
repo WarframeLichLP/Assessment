@@ -1,7 +1,7 @@
 import React from "react";  
 import { useState, useEffect } from "react";
 import { getBreedsList, getRandomDogImage } from "./lib/dogApi";
-import DogClickQuiz from "./components/DogClickQuiz";
+import Quiz from "./components/Quiz";
 
 export default function App() {
   // 1. Create state for dogs and loading
