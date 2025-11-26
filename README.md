@@ -765,3 +765,24 @@ Follow your teacher's instructions for submitting!
 - [Jokes API](https://official-joke-api.appspot.com/) - Random jokes
 - [Advice API](https://api.adviceslip.com/) - Random advice
 - [Color API](https://www.thecolorapi.com/) - Color information and palettes
+
+---
+
+### New: Dog Click Quiz (image → pick the correct breed)
+A "Dog Quiz" button has been added to the app navigation. Click it to open a 5-question quiz where each question shows a dog picture and several buttons — choose the button that matches the breed shown.
+
+Files added/changed:
+- src/components/DogClickQuiz.jsx — the quiz UI and logic (5 questions, score tracking)
+- src/lib/dogApi.js — small helper functions: fetchBreedList, fetchRandomImage, getBreedFromUrl
+- src/App.jsx — navigation / "Dog Quiz" button and page switch
+- src/styles.css — small styles for colored result boxes
+
+Result coloring:
+- 100% → light green
+- 0% → orange
+- other scores → light yellow
+
+How to run:
+1. npm install (if needed)
+2. npm run dev
+3. Open the app, click "Dog Quiz" and try the five-image test.
